@@ -337,39 +337,46 @@
   <!-- Clients-->
   <div class="py-5 clientes">
     <div class="container">
+       <div class="text-center">
+        <!-- <h2 class="section-heading ">Lenguajes de programación</h2> -->
+        <h3 class="section-subheading text-muted">
+          Tecnologías más utilizadas
+        </h3>
+        <br>
+      </div>
       <div class="row align-items-center">
-        <div class="col-md-4 col-sm-6 my-3">
+        <div class="col-md-3 col-sm-6 my-3">
           <a href="#!"
             ><img
               class="img-fluid img-brand d-block mx-auto logo"
-              src="img/logo-pinardi.png"
+              src="img/vue.png"
               alt="Estudio Pinardi"
           /></a>
         </div>
-        <div class="col-md-4 col-sm-6 my-3">
+        <div class="col-md-3 col-sm-6 my-3">
           <a href="#!"
             ><img
               class="img-fluid img-brand d-block mx-auto logo"
-              src="img/logo-piro.png"
+              src="img/node.png"
               alt="Transporte Piro"
           /></a>
         </div>
-        <div class="col-md-4 col-sm-6 my-3">
+        <div class="col-md-3 col-sm-6 my-3">
           <a href="#!"
             ><img
               class="img-fluid img-brand d-block mx-auto logo"
-              src="img/logo-tuscompras.png"
+              src="img/php.png"
               alt="Tus compras online"
           /></a>
         </div>
-        <!-- <div class="col-md-3 col-sm-6 my-3">
+        <div class="col-md-3 col-sm-6 my-3">
           <a href="#!"
             ><img
-              class="img-fluid img-brand d-block mx-auto"
-              src="assets/img/logos/ibm.svg"
+              class="img-fluid img-brand d-block mx-auto logo"
+              src="img/bootstrap.png"
               alt="..."
           /></a>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -571,7 +578,17 @@ export default {
 
 <style scoped>
 .logo {
-  width: 35%;
+  width: 120px;
+  height: 100px;
+  filter: grayscale(1);
+}
+
+.logo:hover{
+  filter: hue-rotate(0deg);
+}
+
+.clientes{
+  background: #fff;
 }
 
 input.error {

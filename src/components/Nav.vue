@@ -3,7 +3,9 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="#page-top"
-        > Saitama Developers <i class="fas fa-code"></i></a>
+        ><i>Saitama Developers</i>
+         <!-- <img src="img/code.png" class="logo-code" alt="code" /> -->
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -24,7 +26,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portafolio</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#about">Sobre nosotros</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre nosotros</a>
+          </li>
           <!-- <li class="nav-item"><a class="nav-link" href="#team">Team</a></li> -->
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contacto</a>
@@ -39,4 +43,9 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped>
+.logo-code {
+  -webkit-filter: grayscale(1);
+  filter: hue-rotate(120deg);
+}
+</style>
