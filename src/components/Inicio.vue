@@ -145,9 +145,10 @@
           Sobre nosotros
         </h2>
         <h3 class="section-subheading text-muted">
-          Somos un equipo de desarrolladores web, freelance, con más de 5 años de
-          experiencia. <br>
-          Te contamos nuestra forma de trabajar: <i class="fas fa-arrow-down"></i>
+          Somos un equipo de desarrolladores web, freelance, con más de 5 años
+          de experiencia. <br />
+          Te contamos nuestra forma de trabajar:
+          <i class="fas fa-arrow-down"></i>
         </h3>
       </div>
       <ul class="timeline">
@@ -493,6 +494,7 @@ import { ref } from "vue";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 
+
 export default {
   setup() {
     const formData = ref({});
@@ -514,6 +516,7 @@ export default {
         await schemaForm.validate(formData.value, { abortEarly: false });
 
         try {
+      
           var templateParams = {
             nombre: formData.value.nombre,
             email: formData.value.email,
@@ -537,6 +540,7 @@ export default {
               }
             );
 
+   
           enviado.value = true;
           no_enviado.value = false;
 
